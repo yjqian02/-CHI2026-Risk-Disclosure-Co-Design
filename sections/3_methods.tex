@@ -1,0 +1,177 @@
+\section{Methods}
+
+% \begin{table}[h]
+% \centering
+% \begin{tabular}{|p{2cm}|p{4cm}|p{3cm}|}
+% \hline
+% \textbf{PID} & \textbf{Job Description} & \textbf{Years in Role}\\
+% \hline
+% T1 & PhD Student & 3-5  \\
+% \hline
+% T2 & Data Analyst & 3-5 \\
+% \hline
+% T3 & Data Analyst & 1-3 \\
+% \hline
+% T4 & AI Researcher & 3-5 \\
+% \hline
+% T5 & Data Analyst & 1-3  \\
+% \hline
+% T6 & Data Analyst & 3-5\\
+% \hline
+% T7 & Data Analyst & 3-5\\
+% \hline
+% T8 & PhD Student & 3-5 \\
+% \hline
+% T9 & Research Assistant & 1-3 \\
+% \hline
+% T10 & Data Scientist & > 5 \\
+% \hline
+% T11 & Data Analyst & 3-5 \\
+% \hline
+% T12 & AI Research Scientist& 1-3 \\
+% \hline
+% T13 & Data Analyst & 1-3 \\
+% \hline
+% T14 & AI Ethics Researcher & 3-5 \\
+% \hline
+% T15 & PhD Student & 1-3 \\
+% \hline
+% W1 & Crowdworker &  1-3 \\
+% \hline
+% W2 & Crowdworker &  1-3 \\
+% \hline
+% W3 & Crowdworker & < 1 \\
+% \hline
+% W4 & Crowdworker & < 1 \\
+% \hline
+% W5 & Crowdworker & 1-3 \\
+% \hline
+% W6 & Crowdworker & 1-3 \\
+% \hline
+% W7 & Crowdworker & 1-3 \\
+% \hline
+% W8 & Crowdworker & 1-3 \\
+% \hline
+% W9 & Crowdworker & 3-5 \\
+% \hline
+% W10 & Crowdworker & 3-5 \\
+% \hline
+% W11 & Crowdworker & > 5 \\
+% \hline
+% P1 & Product Manager & 1-3 \\
+% \hline
+% P2 & Executive & 1-3 \\
+% \hline
+% P3 & \todo{add} & \todo{add} \\
+% \hline
+% \end{tabular}
+% \caption{Task Designer Participants}
+% \label{tab:task-designers}
+% \end{table}
+
+\todo{Ryland: I like the distinction in this chart between Task Designer "T1" vs. Worker "W1" vs. Platform employee "P1". I wonder if we can break from convention with the in-text quote citations by using this distinction, instead of referring to everyone as a participant ("P26" or whatever)? This would reduce the amount of frankensentences like "Moreover, some participants who were task designers argued that... "[quote]" (P26)" (currently on page 16) You'd just need to choose a new letter to represent the platform employees, since "P" already stands for "participant". }
+
+\todo{this participant is a bit too long and too narrow. can we split T and W/P into two sections? or just play around to see what is the best way to present our info here
+}
+
+
+\todo{emphasize the difference between this and interviews -- it's bc the sessions were more design focused  ===> reasons to avoid power imbalance + to accommodate schedules}
+\todo{cite Ningjing's paper AI failure cards: https://dl.acm.org/doi/10.1145/3630106.3658935}
+% from Ningjing' s paper: Each
+% workshop was conducted exclusively with participants belonging
+% to the same stakeholder group, which ensures that they felt comfortable and open to sharing [79].
+
+\subsection{Study Design}
+We conducted co-design sessions to explore how task designers, workers, and platform representatives evaluate and prioritize risk disclosure mechanisms. Co-design was chosen as it foregrounds stakeholder perspectives and enables the surfacing of tensions through collaborative ideation. Drawing from participatory design traditions, we aimed to establish a ``third space'' where participants and researchers could meet on equal footing to engage in mutual learning and shared decision-making~\cite{muller2012participatory, steen2013codesign, bodker2004cooperative}. This approach aligns with prior HCI work that engages multiple stakeholders to understand underlying tensions when designing platform-level interventions~\cite{hsieh_designing_2023, huang2021designing}.
+
+% why we did 1-1 sessions instead of workshops with multiple stakeholders
+We opted to conduct individual co-design sessions with task designers, workers, and platform representatives rather than joint workshops involving multiple stakeholder groups. This decision was made for two key reasons. First, separating stakeholder groups helped protect worker participants, many of whom are in structurally vulnerable positions. Prior research has shown that power asymmetries can shape who feels safe to speak and what perspectives are voiced in multi-party design engagements \cite{muller_participatory_nodate}\todo{I think we need a stronger example citation here}. Conducting sessions separately allowed us to create safer and more comfortable spaces for open reflection, especially when discussing platform practices or task designer behaviors. Second, individual sessions allowed us to dive deeper into stakeholder-specific concerns, generating richer insights into risk perceptions, disclosure priorities, and contextual tensions that may not arise in broader group settings \cite{dillahunt2017designing}. This approach also enabled us to tailor prompts to each group’s domain knowledge and lived experience.
+
+\todo{Hong: here is a good place for us to insert the three key dimensions we used to explore the design space. I can even see the use of a table to list dimensions across low, medium and high, as well as citations where we drew those dimensions from}
+
+
+Each participant engaged in a single co-design session with one researcher, lasting approximately 60 minutes. For each session across all three groups of participants, we first asked participants to reflect on existing challenges they faced when disclosing risk, viewing risk in tasks, and managing risk disclosure. We followed with questions about what `ideal' scenarios of risk disclosure may look like. To elicit deeper discussions, we prepared a series of design probes catered to each specific participant group that varied along three design dimensions if (1) specificity, (2) worker agency, and (3) task designer agency. We used Figma\footnote{https://www.figma.com} to facilitate collaborative discussion. Sessions were audio/video recorded and transcribed for analysis.
+
+% \begin{table*}[t]
+% \centering
+% \begin{tabular}{|p{3.2cm}p{5.6cm}p{5.5cm}|}
+% \toprule
+% \textbf{Dimension} & \textbf{Design Options} & \textbf{Examples} \\
+% \midrule
+% \textbf{Warning Specificity} &
+% \begin{itemize}[leftmargin=*]
+%   \item Sensitive vs. explicit/disturbing
+%   \item Category selection
+%   \item Keyword list
+%   \item Modality (text/image/video)
+%   \item Examples
+%   \item Severity scale
+% \end{itemize}
+% &
+% Task includes content marked ``explicit violence – video’’ and lists keywords such as “blood,” “explosion”; provides example frame and notes it is high severity. \\
+% \midrule
+% \textbf{Worker Agency} &
+% \begin{itemize}[leftmargin=*]
+%   \item No opt-out
+%   \item Informed consent
+%   \item Granular exposure control
+% \end{itemize}
+% &
+% Worker must complete all items (no opt-out); or chooses categories of content to skip (e.g., “sexual content”); or gives consent after previewing sample items. \\
+% \midrule
+% \textbf{Task Designer Agency} &
+% \begin{itemize}[leftmargin=*]
+%   \item Generic template
+%   \item Manual customization
+%   \item AI-assisted risk disclosure
+% \end{itemize}
+% &
+% Platform template with basic warnings; advanced user adds custom tags and severity; platform offers AI suggestions based on task content. \\
+% \bottomrule
+% \end{tabular}
+% \caption{Design Dimensions for Risk Disclosure in Crowdsourced RAI Tasks}
+% \label{tab:design_dimensions}
+% \end{table*}
+% \todo{Hong: I like this table, I wonder if we can (1) add citations to each dimension or options to show that they are from previous literature (2) make the design options across a spectrum: low -- medium -- high}
+
+
+
+% \todo{Hong: this part is good but a bit too long for intro. I can see we move this to our method and add a table to clarify our design choices} 
+Our decision to vary warning \emph{specificity} is grounded in research on trigger and content warnings in social media; these studies note that warning systems range from simple binary alerts to detailed categories and examples, and that inconsistent implementation leads to confusion for both posters and readers~\cite{Zhang2024PerceptionsTriggerWarnings, Hegde2023TriggerDetection, Bridgland2024Meta}. To capture \emph{worker agency}, we looked to scholarship on worker autonomy and worker‑driven advocacy. Projects like \emph{Ink} and \emph{We Are Dynamo} emphasize giving crowd workers more control over their work identities and opportunities~\cite{salehi2018ink,salehi2015we}. Research quantifying invisible labour and highlighting the burdens of algorithmic management similarly calls for greater transparency and opt‑out mechanisms~\cite{toxtli2021quantifying}. Our continuum---from no opt‑out to informed consent to granular exposure controls---mirrors this push for agency. Finally, we considered \emph{task designer agency}. Many HCI papers focus on novice task designers’ needs: tools like \emph{Fantasktic} and \emph{Sprout} help non‑expert requesters improve instructions and quality~\cite{gutheim2012fantasktic,bragg2018sprout}. Studies of novice researchers show that clear templates and guidance are essential when designing crowd tasks~\cite{papoutsaki2015crowdsourcing}. Emerging research identifying challenges of task designers being subject to organizational dynamics and possessing limited support in understanding potential harms to workers in the context of RAI content work further motivates the need to include this perspective~\cite{qian2025locating}. Our third dimension spans generic templates, manual customization, and AI‑assisted disclosure to reflect these varying levels of expertise. Through separate co-design sessions with each stakeholder group, we explored how different actors currently approach risk assessment, what tools and information they need to make informed decisions about risk disclosure, and what barriers prevent more comprehensive disclosure measures. 
+
+
+
+
+
+\subsection{Participants}
+We recruited 29 participants in total, including crowdworkers, task designers, and platform representatives. Participants were recruited via LinkedIn and Reddit postings and referrals via the snowball sampling method. To recruit workers, we posted on crowdworker subreddits such as r\textbackslash mturk\footnote{https://www.reddit.com/r/mturk/} and also through the tasks requested by a few of our task designer participants who volunteered to assist with recruitment. 
+
+We required that each group of participants have a base level of experience. For task designers, we ensured that all our participants had experience requesting at least one RAI content work task. We ensured all our participants who were workers had at least 1 month of experience completing RAI content work tasks and that platform representatives were currently employed at a crowdsourcing platform that hosted RAI content work tasks. (see Table \ref{tab:inclusion-criteria}). In our selection, we asked task designer participants to indicate their background (i.e., job title and sector) and the types of RAI tasks they previously requested (e.g., prompt generation). Additionally, we asked prospective task designer participants to indicate what platforms they used for crowdsourcing as well as the types of content involved in their tasks (e.g., racism). Similarly, we asked workers to describe the types of RAI content work tasks they had experience completing, providing examples of each (e.g., ``provide a prompt for an AI model to produce violent content''). We also asked workers to estimate how many tasks they typically do in one day, the types of sensitive content they encounter, the platforms they use, and to provide an example of an RAI content work task they completed and a short description of how they felt after completing the task. Tables \ref{tab:workers}-\ref{tab:platform-reps} summarize participant demographics. We note all participants were based in the United States and were at least 18 years of age at the time of study participation. 
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Participant Group} & \textbf{Inclusion Criteria} \\
+\hline
+Task Designers & Must have experience requesting at least one task relevant to Responsible AI (RAI) content work. \\
+\hline
+Workers & Must have at least one month of experience completing RAI content work tasks on a crowdsourcing platform. \\
+\hline
+Platform Representatives & Must be currently employed at a crowdsourcing platform that hosts RAI content work tasks. \\
+\hline
+\end{tabular}
+\caption{Inclusion criteria for study participants across stakeholder groups.}
+\label{tab:inclusion-criteria}
+\end{table}
+
+
+
+
+\subsection{Data Collection and Analysis}
+All co-design sessions were conducted by the lead researcher, while analysis was performed collaboratively by the first two authors. Data sources included session transcripts and notes from co-design sessions. We applied the method of reflexive thematic analysis~\cite{clarke2017thematic, smith1995semi}. We conducted our qualitative analysis in multiple stages. First, two researchers independently generated fine-grained, low-level codes for each transcript. These were then grouped into axial codes to surface relationships across participant responses. Through iterative cycles of code consolidation, discussion, and memo-writing, we refined these into higher-level themes. Discrepancies in interpretation were resolved through discussion to strengthen validity. Throughout, we used analytic memos and reflexive notes to document evolving insights and to support reflexivity across the analysis process.
+
+
+\subsection{Ethical Considerations}
+This study was approved by our Institutional Review Board (IRB). All participants provided informed consent and were compensated \$30 USD for their time via an online gift card. Given the sensitive nature of risk disclosure and content moderation, we designed activities to minimize potential distress (e.g., when showing a tool that allows task designer to provide an example of harmful content we used a filler sentence of ``example of sentence featuring hatespeech''). Participants could withdraw at any time without penalty and were reminded to not provide identifying information or information they were not comfortable speaking about. 
