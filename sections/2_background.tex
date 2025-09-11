@@ -1,45 +1,55 @@
 \section{Related Work}
-\begin{figure}
-  \centering
-  \includegraphics[width=0.6\linewidth]{figures/mturk_adult_qualification.pdf}
-  \caption{MTurk’s adult content qualification requirement for screening workers.}
-  \label{fig:mturk_adult}
-\end{figure}
+% \begin{figure}
+%   \centering
+%    \includegraphics[width=\linewidth]{figures/prolific_zoomedin_binary.pdf}
+%     \caption{Close-up of the sensitive content warning presented to workers.}
+%     \label{fig:prolific_zoomed}
+%     \caption{An example of the options for including a warning that Prolific provides to task designers.}
+% \end{figure}
 
 
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{0.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{figures/prolific_zoomedin_binary.pdf}
-    \caption{Close-up of the sensitive content warning presented to workers.}
-    \label{fig:prolific_zoomed}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[b]{0.48\linewidth}
-    \centering
-    \includegraphics[width=\linewidth]{figures/prolific_worker_side_example.pdf}
-    \caption{Worker-facing task list view with a sensitive content label.}
-    \label{fig:prolific_worker}
-  \end{subfigure}
-  \caption{Prolific’s interface-level disclosure mechanisms from the worker perspective.}
-  \label{fig:prolific_worker_pair}
-\end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{figures/warning_zooniverse.pdf}
-  \caption{Task content warning from Zooniverse}
-  \label{fig:zooniverse_removed}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.6\linewidth]{figures/mturk_adult_qualification.pdf}
+%   \caption{MTurk’s adult content qualification requirement for screening workers.}
+%   \label{fig:mturk_adult}
+% \end{figure}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.7\linewidth]{figures/toloka_removed_task.pdf}
-  \caption{Removed task page from Toloka, demonstrating limited access to past sensitive content.}
-  \label{fig:toloka_removed}
-\end{figure}
-\todo{note the figures here are too big and a bit overwhelming, can consider condensing or moving to appendix. maybe we can just keep one of them as illustrative example}
+
+% \begin{figure}
+%   \centering
+%   \begin{subfigure}[b]{0.48\linewidth}
+%     \centering
+%     \includegraphics[width=\linewidth]{figures/prolific_zoomedin_binary.pdf}
+%     \caption{Close-up of the sensitive content warning presented to workers.}
+%     \label{fig:prolific_zoomed}
+%   \end{subfigure}
+%   \hfill
+%   \begin{subfigure}[b]{0.48\linewidth}
+%     \centering
+%     \includegraphics[width=\linewidth]{figures/prolific_worker_side_example.pdf}
+%     \caption{Worker-facing task list view with a sensitive content label.}
+%     \label{fig:prolific_worker}
+%   \end{subfigure}
+%   \caption{Prolific’s interface-level disclosure mechanisms from the worker perspective.}
+%   \label{fig:prolific_worker_pair}
+% \end{figure}
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=\linewidth]{figures/warning_zooniverse.pdf}
+%   \caption{Task content warning from Zooniverse}
+%   \label{fig:zooniverse_removed}
+% \end{figure}
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=0.7\linewidth]{figures/toloka_removed_task.pdf}
+%   \caption{Removed task page from Toloka, demonstrating limited access to past sensitive content.}
+%   \label{fig:toloka_removed}
+% \end{figure}
+% \todo{note the figures here are too big and a bit overwhelming, can consider condensing or moving to appendix. maybe we can just keep one of them as illustrative example}
 
 %\subsection{Risk Disclosure and Transparency in Crowdsourcing}
 \subsection{Psychological and Well-being Risks of RAI Content Work} 
@@ -79,10 +89,10 @@ While academic and organizational discourse has increasingly underscored the imp
 %Task designers often lack structured guidance for implementing content warnings or consent flows in the task specification stage for RAI content work tasks~\cite{qian2025locating}. 
 
 On the one hand, most crowdsourcing platforms offer limited, inconsistent, or opaque mechanisms for risk disclosure. % or ensuring their adoption when they do exist. One approach is allowing task designers to specify in different ways that their task contains sensitive content. 
-Prolific, for example, provides a researcher-facing ``sensitive content'' toggle during study design (Figure \ref{fig:prolific_zoomed} along with an option to include additional information with keywords (see Figure \ref{fig:prolific_keywords}, along with guidelines to include warnings in task descriptions for both task designers ~\cite{ProlificResearcherSensitive2025, ProlificAPIContentWarning2025} and workers~\cite{prolific2025participant}. Another approach is to limit exposure based on age limits or other qualifications. Amazon Mechanical Turk (MTurk), for example, provides task designers with an ``adult content qualification'' requirement option in which only workers who have received this certification can see tasks with such content (see Figure \ref{fig:mturk_adult}). Research platforms such as Zooniverse and Tokola provide examples of task-level warnings (see Figure \ref{fig:zooniverse_removed} and Figure \ref{fig:toloka_removed}), but these remain inconsistent in format and enforcement.
+Prolific, for example, provides a researcher-facing ``sensitive content'' toggle during study design (see Appendix Figure A2(a)) along with an option to include additional information with keywords, along with guidelines to include warnings in task descriptions for both task designers ~\cite{ProlificResearcherSensitive2025, ProlificAPIContentWarning2025} and workers~\cite{prolific2025participant}. Another approach is to limit exposure based on age limits or other qualifications. Amazon Mechanical Turk (MTurk), for example, provides task designers with an ``adult content qualification'' requirement option in which only workers who have received this certification can see tasks with such content (see Appendix Figure A1). Research platforms such as Zooniverse and Tokola provide examples of task-level warnings, but these remain inconsistent in format and enforcement\footnote{https://www.zooniverse.org/}\footnote{https://toloka.ai/}. However, the relative effectiveness of these methods is unclear as well as how each stakeholder group involved in their use and implementation perceives them.  
 %Platforms such as DataAnnotation, Remotasks, and SurgeAI, lock their interfaces behind employment verification systems, and publicly available information about their risk disclosure process is scarce. Platforms used for crowdsourced research, such as Zooniverse and Tokola, have documented similar types of warnings for tasks (see Figure \ref{fig:zooniverse_removed}).  At the surface level we see a lack of consensus across platforms around how risk disclosure should be supported within crowdsourcing infrastructures.
 Beyond disclosure options, platform-level governance also varies significantly. %Platforms have the power to moderate or enforce risk disclosures. There is limited publicly available documentation, however, on how platforms make decisions on what tasks or content are permitted. 
-For example, Prolific allows workers to report tasks for review and potential removal, and anecdotal evidence suggests platforms like Toloka have occasionally removed tasks after worker complaints (Figure~\ref{fig:toloka_removed}). However, such interventions appear to be the exception rather than the norm.
+For example, Prolific allows workers to report tasks for review and potential removal, and anecdotal evidence suggests platforms like Toloka have occasionally removed tasks after worker complaints (see Appendix Figure A3). However, such interventions appear to be the exception rather than the norm.
 
 On the other hand, past work on content warnings on consumer-facing platforms offers important lessons. Social media platforms such as Tumblr, Twitter (now X), Instagram, and TikTok have implemented content warnings to protect users from potentially distressing material, ranging from textual tags like \#tw to automated overlays that blur graphic images. These systems aim to support informed consent, reduce harm, and signal sensitivity to trauma~\cite{Zhang2024PerceptionsTriggerWarnings, vit2025use}. However, their application is highly variable and their effectiveness remains contested. Empirical studies show that while users generally appreciate warnings in principle, concerns persist about inconsistent enforcement, insufficient granularity, and unclear rationale~\cite{charles2022typology, bridgland2024meta, bell2025warning}. Some warnings may even increase anticipatory anxiety, especially among individuals with lived experience of trauma~\cite{sharevski2022meaningful}. These limitations highlight the complexity of operationalizing harm reduction at scale and suggest that risk disclosure is not simply a matter of adding labels, but requires careful design attuned to user needs, platform affordances, and sociocultural context.
 
