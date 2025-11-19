@@ -20,11 +20,12 @@
 
 
 
-\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
-\newcommand{\alice}[1]{\textcolor{orange}{[Alice: #1]}}
+\newcommand{\edit}[1]{\textcolor{red}{[#1]}}
+\newcommand{\alice}[1]{\textcolor{green}{[Alice: #1]}}
+\newcommand{\ryland}[1]{\textcolor{blue}{[Ryland: #1]}}
 
 
-\usepackage{titlesec}
+% \usepackage{titlesec}
 \usepackage{enumitem}
 
 \usepackage{longtable}
@@ -33,20 +34,20 @@
 
 
 
-\newcommand{\orgs}[0]{\textbf{Organizations~}}
-\newcommand{\teams}[0]{\textbf{Teams~}}
-\newcommand{\inds}[0]{\textbf{Individuals~}}
-% \newcommand{\recommendation}[1]{\paragraph{\textit{#1}}}
+% \newcommand{\orgs}[0]{\textbf{Organizations~}}
+% \newcommand{\teams}[0]{\textbf{Teams~}}
+% \newcommand{\inds}[0]{\textbf{Individuals~}}
+% % \newcommand{\recommendation}[1]{\paragraph{\textit{#1}}}
 
-\newcommand{\recsection}[3]{
-    \paragraph{\textit{#1}} {#2}
-    \ifthenelse{\equal{#3}{}}{}{\newline\hspace*{2em}\textit{Consider}: #3}
-}
+% \newcommand{\recsection}[3]{
+%     \paragraph{\textit{#1}} {#2}
+%     \ifthenelse{\equal{#3}{}}{}{\newline\hspace*{2em}\textit{Consider}: #3}
+% }
 
-\renewcommand{\sectionautorefname}{Section}
-\renewcommand{\subsectionautorefname}{Section}
-\renewcommand{\subsubsectionautorefname}{Section}
-\renewcommand{\figureautorefname}{Figure}
+% \renewcommand{\sectionautorefname}{Section}
+% \renewcommand{\subsectionautorefname}{Section}
+% \renewcommand{\subsubsectionautorefname}{Section}
+% \renewcommand{\figureautorefname}{Figure}
 
 % fixing issues with whitespace
 \hyphenpenalty=10000
@@ -150,7 +151,7 @@
 \ccsdesc[500]{Social and professional topics~Computing / technology policy}
 
 
-\renewcommand{\shortauthors}{Alice Qian Zhang, et al.}
+\renewcommand{\shortauthors}{Alice Qian, et al.}
 
 \include{sections/0_abstract}
 
