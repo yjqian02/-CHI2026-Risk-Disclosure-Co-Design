@@ -1,36 +1,44 @@
-\documentclass[manuscript, review, anonymous]{acmart}
+\documentclass[sigconf]{acmart}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
     Bib\TeX}}}
 
-
+% \copyrightyear{2026}
+% \acmYear{2026}
+% \setcopyright{cc}
+% \setcctype{by}
+% \acmConference[CHI '26]{Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems}{April 13--17, 2026}{Barcelona, Spain}
+% \acmBooktitle{Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), April 13--17, 2026, Barcelona, Spain}
+% \acmPrice{}
+% \acmDOI{10.1145/3772318.3791558}
+% \acmISBN{979-8-4007-2278-3/2026/04}
 
 
 \usepackage{xcolor}
 % package for grey-out text box
-\usepackage{tcolorbox}
+% \usepackage{tcolorbox}
 % for table of recs (to merge rows)
 \usepackage{multirow}
 % to reference sections between documents
-\usepackage{xr}
+% \usepackage{xr}
 \usepackage{graphicx}
 \usepackage{subcaption} % for images
+\usepackage{array}
 
 
-
-\newcommand{\edit}[1]{\textcolor{red}{[#1]}}
-\newcommand{\alice}[1]{\textcolor{green}{[Alice: #1]}}
+% \newcommand{\edit}[1]{\textcolor{red}{#1}}
+\newcommand{\edit}[1]{\textcolor{black}{#1}}
+\newcommand{\alice}[1]{\textcolor{teal}{[Alice: #1]}}
 \newcommand{\ryland}[1]{\textcolor{blue}{[Ryland: #1]}}
 
 
 % \usepackage{titlesec}
 \usepackage{enumitem}
 
-\usepackage{longtable}
-\usepackage{subcaption}
-\usepackage{multirow}
+% \usepackage{longtable}
+
 
 
 
@@ -59,33 +67,37 @@
 
 \begin{document}
 
-\title[]{}
 
 
 \author{Alice Qian}
 \email{aqzhang@andrew.cmu.edu}
 \affiliation{%
   \institution{Carnegie Mellon University}
-  \state{Pennsylvania}
+  \department{Human-Computer Interaction Institute}
+    \city{Pittsburgh}
+    \state{Pennsylvania}
   \country{USA}
 }
 \author{Ziqi Yang}
 \email{ziqiyang@andrew.cmu.edu}
 \affiliation{
     \institution{Carnegie Mellon University}
+    \department{Human-Computer Interaction Institute}
+    \city{Pittsburgh}
     \state{Pennsylvania}
     \country{USA}
 }
 
 
 \author{Ryland Shaw}
-\orcid{0009-0008-6123-1781}
-\email{v-rylandshaw@microsoft.com}
+\email{rylandsh@usc.edu}
+\authornote{Ryland Shaw was a pre-doctoral research assistant at Microsoft Research (Cambridge MA) at the time of this writing.}
 \affiliation{%
-  \institution{Microsoft Research}
-  \city{New York City}
-  \state{New York}
-  \country{United States}
+  \institution{University of Southern California}
+  \department{Annenberg School of Communication}
+  \city{Los Angeles}
+  \state{California}
+  \country{USA}
 }
 
 
@@ -94,6 +106,8 @@
 \email{jinsuh@microsoft.com}
 \affiliation{%
   \institution{Microsoft Research}
+  \city{Redmond}
+  \state{Washington}
   \country{USA}}
 
       
@@ -101,13 +115,19 @@
 \email{dabbish@andrew.cmu.edu}
 \affiliation{%
   \institution{Carnegie Mellon University}
+  \department{Human-Computer Interaction Institute}
+    \city{Pittsburgh}
+    \state{Pennsylvania}
   \country{USA}}
 
   
 \author{Hong Shen}
-\email{hongs@andrew.cmu.edu}
+% \email{hongs@andrew.cmu.edu}
 \affiliation{%
   \institution{Carnegie Mellon University}
+  \department{Human-Computer Interaction Institute}
+    \city{Pittsburgh}
+    \state{Pennsylvania}
   \country{USA}}
 
 
@@ -161,7 +181,7 @@
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Responsible AI, crowdsourcing, well-being, data work, red teaming, RAI content work}
+\keywords{AI safety, AI red teaming, risk, RAI content work, crowdsourcing, well-being, data work}
 % \received{January 2024}
 % \received[revised]{July 2024}
 % \received[accepted]{October 2024}
@@ -192,7 +212,7 @@
 
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{_references, _references_aura, _references_crowdsourcing, _references_locating_risk}
-% \input{sections/7_appendix}
+\input{sections/7_appendix}
 \end{document}
 \endinput
 
